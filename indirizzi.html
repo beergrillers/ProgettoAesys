@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>INDIRIZZI - ITIS D'ANNUNZIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #E1F2F8; /* Sfondo celeste chiaro */
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+        }
+        
+        .card-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .card-description {
+            font-size: 16px;
+        }
+        
+        .w3-bar {
+            background-color: white; /* Barra superiore Bianca */
+            color: black;
+            text-align: center;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            height: 60px;
+            margin: 0;
+            padding: 0 20px;
+            border-bottom: 1px solid black;
+        }
+
+        .w3-bar a {
+            color: black;
+            font-size: 15px;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 50%;
+        }
+        
+        .logo {
+            display: inline-block;
+            width: 55px;
+            height: 55px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+        .school-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            margin-left: 10px;
+        }
+        .school-name a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .footer {
+            background-color: white; /* Footer bianco */
+            border-top: 1px solid black;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        /* Media Queries per rendere il sito responsive */
+        @media (max-width: 768px) {
+            .w3-bar {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+            .w3-bar a {
+                padding: 10px 0;
+            }
+            .logo-container {
+                justify-content: center;
+                margin-bottom: 10px;
+                width: 100%;
+            }
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="w3-bar">
+        <div class="logo-container">
+            <img class="logo" src="logo.jpg" alt="Logo ITIS D'ANNUNZIO">
+            <div class="school-name">ITIS D'ANNUNZIO</div>
+        </div>
+        <div>
+            <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+            <a href="istituto.html" class="w3-bar-item w3-button">ISTITUTO</a>
+            <a href="indirizzi.html" class="w3-bar-item w3-button">INDIRIZZI</a>
+            <a href="docenti.html" class="w3-bar-item w3-button">DOCENTI</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="card">
+            <h2 class="card-title">Informatica e Telecomunicazioni</h2>
+            <p class="card-description">L'indirizzo "Informatica e Telecomunicazioni" offerto dalla nostra scuola superiore è un percorso educativo che prepara gli studenti a entrare nel mondo della tecnologia digitale e delle comunicazioni. <br>
+                Gli studenti acquisiscono competenze fondamentali nella programmazione, nello sviluppo di software, nella gestione dei database e nella sicurezza informatica. 
+                Vengono anche introdotti ai principi di networking e alle tecnologie di telecomunicazione. L'indirizzo si concentra sull'applicazione pratica delle competenze informatiche e sulla risoluzione dei problemi tecnologici. <br>
+                Gli studenti sono preparati per intraprendere carriere nell'informatica, nello sviluppo di software, nella gestione di reti e nelle telecomunicazioni, dove l'innovazione tecnologica e la connettività sono sempre più importanti.</p>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Meccanica, Meccatronica ed Energia</h2>
+            <p class="card-description">L'indirizzo "Elettronica ed Elettrotecnica" offerto dalla nostra scuola superiore è un percorso educativo che si concentra sulle discipline dell'elettronica e dell'elettrotecnica. <br>
+                Gli studenti acquisiscono competenze teoriche e pratiche nella progettazione, nell'installazione e nella manutenzione di sistemi elettronici e impianti elettrici. 
+                Lo studio comprende la comprensione dei circuiti elettrici, l'utilizzo di componenti elettronici, la programmazione di dispositivi e la risoluzione di problemi elettrici. <br>
+                L'indirizzo si estende anche all'elettrotecnica industriale, con un focus sulla sicurezza, l'automazione e il controllo di sistemi. <br>
+                Gli studenti sono preparati per intraprendere una carriera nel settore dell'elettronica, dell'automazione industriale, delle telecomunicazioni e di altre industrie tecnologiche correlate.</p>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Chimica, Materiali e Biotecnologie</h2>
+            <p class="card-description">L'indirizzo "Chimica, Materiali e Biotecnologie" offerto dalla nostra scuola superiore è un percorso educativo che si concentra sullo studio delle scienze chimiche, dei materiali e delle applicazioni biotecnologiche. <br>
+                Gli studenti acquisiscono conoscenze approfondite sulla chimica, imparando a comprendere e manipolare le proprietà delle sostanze. Vengono introdotti anche ai materiali avanzati, come polimeri, metalli e ceramici, e alla loro produzione e utilizzo. Inoltre, vengono esplorate le applicazioni biotecnologiche, come l'ingegneria genetica e la produzione di farmaci. <br>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Trasporti e Logistica</h2>
+            <p class="card-description">L'indirizzo "Trasporti e Logistica" offerto dalla nostra scuola superiore è un percorso educativo che si concentra sull'organizzazione e gestione dei trasporti e della logistica. <br>
+                Gli studenti acquisiscono competenze nel pianificare, coordinare e gestire i flussi di merci e persone attraverso diverse modalità di trasporto, come strada, ferrovia, mare e aria. Vengono introdotti anche ai concetti di logistica, gestione della catena di approvvigionamento e sistemi di trasporto intelligenti. <br>
+                L'indirizzo si estende anche alla conoscenza delle normative e degli aspetti economici e ambientali legati ai trasporti e alla logistica. <br>
+                Gli studenti sono preparati per intraprendere una carriera nell'industria dei trasporti, delle spedizioni, della logistica e dei servizi correlati.</p>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Elettronica ed Elettrotecnica</h2>
+            <p class="card-description">L'indirizzo "Elettronica ed Elettrotecnica" offerto dalla nostra scuola superiore è un percorso educativo che si concentra sulle discipline dell'elettronica e dell'elettrotecnica. <br>
+                Gli studenti acquisiscono competenze teoriche e pratiche nella progettazione, nell'installazione e nella manutenzione di sistemi elettronici e impianti elettrici. 
+                Lo studio comprende la comprensione dei circuiti elettrici, l'utilizzo di componenti elettronici, la programmazione di dispositivi e la risoluzione di problemi elettrici. <br>
+                L'indirizzo si estende anche all'elettrotecnica industriale, con un focus sulla sicurezza, l'automazione e il controllo di sistemi. <br>
+                Gli studenti sono preparati per intraprendere una carriera nel settore dell'elettronica, dell'automazione industriale, delle telecomunicazioni e di altre industrie tecnologiche correlate.</p>
+        </div>
+    </div>
+    <div class="footer">
+        Indirizzo: Via Cincinnato 28 - 65127 Pescara<br>
+        Telefono: +39 021 234 5678<br>
+        Email: gabrieledannunzio.itis@educazione.edu.it
+    </div>
+</body>
+</html>

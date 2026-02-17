@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ISTITUTO - ITIS D'ANNUNZIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #E1F2F8; /* Sfondo celeste chiaro */
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+        }
+        
+        .card-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .card-description {
+            font-size: 16px;
+        }
+        
+        .w3-bar {
+            background-color: white; /* Barra superiore Bianca */
+            color: black;
+            text-align: center;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            height: 60px;
+            margin: 0;
+            padding: 0 20px;
+            border-bottom: 1px solid black;
+        }
+
+        .w3-bar a {
+            color: black;
+            font-size: 15px;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 50%;
+        }
+        
+        .logo {
+            display: inline-block;
+            width: 55px;
+            height: 55px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+        .school-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            margin-left: 10px;
+        }
+        .school-name a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .footer {
+            background-color: white; /* Footer bianco */
+            border-top: 1px solid black;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        /* Media Queries per rendere il sito responsive */
+        @media (max-width: 768px) {
+            .w3-bar {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+            .w3-bar a {
+                padding: 10px 0;
+            }
+            .logo-container {
+                justify-content: center;
+                margin-bottom: 10px;
+                width: 100%;
+            }
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="w3-bar">
+        <div class="logo-container">
+            <img class="logo" src="logo.jpg" alt="Logo ITIS D'ANNUNZIO">
+            <div class="school-name">ITIS D'ANNUNZIO</div>
+        </div>
+        <div>
+            <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+            <a href="istituto.html" class="w3-bar-item w3-button">ISTITUTO</a>
+            <a href="indirizzi.html" class="w3-bar-item w3-button">INDIRIZZI</a>
+            <a href="docenti.html" class="w3-bar-item w3-button">DOCENTI</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="card">
+            <h2 class="card-title">Chi Siamo</h2>
+            <p class="card-description">Benvenuti nell'ITIS D'Annunzio, un prestigioso istituto tecnico che offre un'educazione di qualità ai suoi studenti. La nostra missione è fornire una formazione completa e preparare gli studenti per una carriera di successo nel mondo professionale.<br>
+                Presso l'ITIS D'Annunzio, promuoviamo l'eccellenza accademica e il pensiero critico. Offriamo una vasta gamma di corsi di studio in diverse discipline tecniche, consentendo agli studenti di sviluppare competenze pratiche e teoriche.<br>
+                La nostra facoltà altamente qualificata è impegnata nel fornire un ambiente di apprendimento stimolante e supportare gli studenti nel raggiungimento dei loro obiettivi. Siamo orgogliosi di coltivare una cultura di innovazione, collaborazione e leadership.</p>
+        </div>
+        <div class="card">
+            <h2 class="card-title">La Storia</h2>
+            <p class="card-description">L'ITIS D'Annunzio ha una lunga storia di eccellenza nell'istruzione tecnica. Fondata nel 1950, l'istituto ha costantemente adattato i suoi programmi educativi per rispondere alle esigenze dell'industria e della società in evoluzione.<br>
+            Nel corso degli anni, l'ITIS D'Annunzio ha formato numerosi professionisti di successo che hanno contribuito a trasformare il panorama tecnologico. Siamo orgogliosi delle nostre radici e continuiamo a guidare l'innovazione nel settore dell'istruzione tecnica.<br>
+            Oggi, l'ITIS D'Annunzio è riconosciuto come uno dei migliori istituti tecnici del paese. Continuiamo a mantenere alti standard di insegnamento e a preparare gli studenti per le sfide del futuro.</p>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Progetti</h2>
+            <p class="card-description">L'ITIS D'Annunzio ha una lunga storia di eccellenza nell'istruzione tecnica. Fondata nel 1950, l'istituto ha costantemente adattato i suoi programmi educativi per rispondere alle esigenze dell'industria e della società in evoluzione.<br>
+                Nel corso degli anni, l'ITIS D'Annunzio ha formato numerosi professionisti di successo che hanno contribuito a trasformare il panorama tecnologico. Siamo orgogliosi delle nostre radici e continuiamo a guidare l'innovazione nel settore dell'istruzione tecnica.<br>
+                Oggi, l'ITIS D'Annunzio è riconosciuto come uno dei migliori istituti tecnici del paese. Continuiamo a mantenere alti standard di insegnamento e a preparare gli studenti per le sfide del futuro.</p>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Dove Siamo</h2>
+            <p class="card-description">Siamo ubicati in Via Cincinnato, 28 a Pescara nel cuore della città. La nostra sede è facilmente raggiungibile e offre un ambiente accogliente e stimolante per gli studenti. Situata in una zona centrale, la scuola è circondata da diverse attrazioni culturali e servizi che arricchiscono l'esperienza educativa dei nostri studenti. Non esitate a visitarci e scoprire il nostro campus moderno e le strutture all'avanguardia che offriamo.</p>
+        </div>
+    </div>
+    <div class="footer">
+        Indirizzo: Via Cincinnato 28 - 65127 Pescara<br>
+        Telefono: +39 021 234 5678<br>
+        Email: gabrieledannunzio.itis@educazione.edu.it
+    </div>
+</body>
+</html>

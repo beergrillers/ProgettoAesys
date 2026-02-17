@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOCENTI - ITIS D'ANNUNZIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+    	        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #E1F2F8; /* Sfondo celeste chiaro */
+        }
+        .w3-bar {
+            background-color: white; /* Barra superiore bianca */
+            color: black;
+            text-align: center;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            height: 60px;
+            margin: 0;
+            padding: 0 20px;
+            border-bottom: 1px solid black;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 50%;
+            margin-left: -45px;
+        }
+        .logo {
+            display: inline-block;
+            width: 55px;
+            height: 55px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+        .school-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            margin-left: 10px;
+        }
+        .school-name a {
+            text-decoration: none;
+            color: black;
+        }
+        .footer {
+            background-color: white; /* Footer bianco */
+            border-top: 1px solid black;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            font-size: 12px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        th, td {
+          border: 1px solid #ddd;
+          padding: 12px;
+          text-align: center;
+        }
+        th {
+          background-color: #f2f2f2;
+          color: #333;
+        }
+        td {
+          background-color: #fff;
+          color: #666;
+        }
+        tr:nth-child(even) td {
+          background-color: #f9f9f9;
+        }
+        tr:hover td {
+          background-color: #eaeaea;
+        }
+        ul {
+          list-style-type: none;
+          padding: 0;
+        }
+        body {
+          text-align: center;
+        }
+        h2 {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          font-weight: bold;
+        }
+        ul {
+          list-style-type: none;
+          padding: 0;
+          text-align: left;
+          margin: 0 auto;
+          max-width: 300px;
+          margin-top: 10px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 30px;
+        }
+        li {
+          margin-bottom: 5px;
+        }
+        li a {
+          display: block;
+          padding: 10px;
+          background-color: #f2f2f2;
+          text-decoration: none;
+          color: #333;
+          border-radius: 5px;
+          transition: background-color 0.3s ease;
+          border: 1px solid black;
+        }
+        li a:hover {
+          background-color: #eaeaea;
+        }
+        
+        /* Media Queries per rendere il sito responsive */
+        @media (max-width: 768px) {
+            .w3-bar {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+            .w3-bar a {
+                padding: 10px 0;
+            }
+            .logo-container {
+                justify-content: center;
+                margin-bottom: 10px;
+                width: 100%;
+            }
+            .card {
+                width: 90%;
+            }
+        }
+        
+      </style>
+</head>
+<body>
+
+  <div class="w3-bar">
+    <div class="logo-container">
+      <a href="index.html" class="school-name"><img class="logo" src="logo.jpg" alt="Logo ITIS D'ANNUNZIO"></a>
+      <div class="school-name"><a href="index.html">ITIS D'ANNUNZIO</a></div>
+    </div>
+    <div>
+      <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+      <a href="istituto.html" class="w3-bar-item w3-button">ISTITUTO</a>
+      <a href="indirizzi.html" class="w3-bar-item w3-button">INDIRIZZI</a>
+      <a href="docenti.html" class="w3-bar-item w3-button">DOCENTI</a>
+    </div>
+  </div>
+  <div style="display: flex; justify-content: center;">
+    <h2>Orario Docenti</h2>
+  </div>
+  <ul>
+    <li><a href="prof-rossi.html">Prof. Rossi</a></li>
+  </ul>
+  <div class="footer">
+    Indirizzo: Via degli Amanti, 28 - 65121 Pescara<br>
+    Telefono: +39 021 234 5678<br>
+    Email: gabrieledannunzio.itis@educazione.edu.it
+  </div>
+</body>
+</html>

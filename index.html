@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ITIS D'ANNUNZIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #E1F2F8; /* Sfondo celeste chiaro */
+        }
+        
+        .band {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            min-height: 100vh;
+            background-image: url("images/scuola.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .band-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .band-content {
+            position: relative;
+            z-index: 1;
+        }
+        .scroll-down-arrow {
+            position: absolute;
+            bottom: -170px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            background-image: url("images/down-arrow-icon.jpg");
+            background-size: cover;
+            cursor: pointer;
+            margin-top: 50px; /* Sposta la freccia verso il basso di 50 pixel */
+            transition: transform 0.5s ease-in-out;
+        }
+        .scroll-down-arrow:hover {
+            transform: translateX(-50%) translateY(10px); /* Sposta la freccia di 10 pixel verso il basso durante il passaggio del mouse */
+        }
+        
+        .announcements {
+            text-align: left;
+            padding: 20px;
+            background-color: #FFFFFF; /* Sfondo bianco per ogni annuncio */
+            margin: 20px 150px; /* Margini sui lati e spazio sopra/sotto ogni annuncio */
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            align-items: center;
+        }
+        
+        .w3-bar {
+            background-color: white; /* Barra superiore Bianca */
+            color: black;
+            text-align: center;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            height: 60px;
+            margin: 0;
+            padding: 0 20px;
+            border-bottom: 1px solid black;
+        }
+        
+        .w3-bar a {
+            color: black;
+            font-size: 15px;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 50%;
+        }
+        
+        .logo {
+            display: inline-block;
+            width: 55px;
+            height: 55px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+        .school-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            margin-left: 10px;
+        }
+        .school-name a {
+            text-decoration: none;
+            color: black;
+        }
+        .footer {
+            background-color: white; /* Footer bianco */
+            border-top: 1px solid black;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            font-size: 12px;
+        }
+        .announcement-title {
+            font-size: 24px;
+        }
+        .announcement-description {
+            font-size: 16px;
+        }
+
+        /* Media Queries per rendere il sito responsive */
+        @media (max-width: 768px) {
+            .w3-bar {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+            .w3-bar a {
+                padding: 10px 0;
+            }
+            .logo-container {
+                justify-content: center;
+                margin-bottom: 10px;
+                width: 100%;
+            }
+            .announcements {
+                margin: 20px 20px;
+            }
+            .scroll-down-arrow {
+                bottom: -100px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="w3-bar">
+        <div class="logo-container">
+            <img class="logo" src="images/logo.jpg" alt="Logo ITIS D'ANNUNZIO">
+            <div class="school-name">ITIS D'ANNUNZIO</div>
+        </div>
+        <div>
+            <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+            <a href="istituto.html" class="w3-bar-item w3-button">ISTITUTO</a>
+            <a href="indirizzi.html" class="w3-bar-item w3-button">INDIRIZZI</a>
+            <a href="docenti.html" class="w3-bar-item w3-button">DOCENTI</a>
+        </div>
+    </div>
+    <div class="band">
+        <div class="band-overlay"></div>
+        <div class="band-content">
+            <h1 class="band-title">ISTITUTO TECNICO INDUSTRIALE SUPERIORE</h1>
+            <h1 class="band-title">GABRIELE D'ANNUNZIO</h1>
+            <a href="#announcements" class="scroll-down-arrow"></a>
+        </div>
+    </div>
+    <div id="announcements">
+        <div class="announcements">
+            <h2 class="announcement-title">Circolare del 5/06/2023</h2>
+            <p class="announcement-description">Oggetto: Calendario degli esami di fine anno<br>
+            Gentili genitori, studenti e docenti,<br>
+            con la presente circolare vi comunichiamo il calendario degli esami di fine anno scolastico. Questi esami rappresentano un momento importante per valutare il percorso di apprendimento degli studenti e definire le loro competenze acquisite durante l'anno scolastico.<br>
+            Di seguito riportiamo le date e gli orari delle prove:<br>
+            Esame di italiano: 12 giugno 2023, ore 9:00 - 12:00
+            Esame di matematica: 15 giugno 2023, ore 9:00 - 11:00
+            Esame di storia: 19 giugno 2023, ore 14:00 - 16:00
+            Esame di scienze: 22 giugno 2023, ore 9:00 - 11:00
+            Ricordiamo agli studenti di presentarsi puntuali e con tutto il materiale necessario per svolgere le prove. Si richiede inoltre di rispettare le regole di comportamento e l'integrità durante lo svolgimento degli esami.<br>
+            Per ulteriori dettagli e per conoscere le modalità specifiche di ciascuna prova, vi invitiamo a consultare il nostro sito web o a rivolgervi ai vostri docenti di riferimento.<br>
+            Auguriamo a tutti gli studenti buona fortuna per gli esami e un meritato periodo di riposo estivo.<br>
+            Cordiali saluti,<br>
+            La Dirigenza</p>
+        </div>
+        <div class="announcements">
+            <h2 class="announcement-title">Circolare del 10/05/2023</h2>
+            <p class="announcement-description">Oggetto: Riapertura delle attività scolastiche in presenza<br>
+            Gentili genitori, studenti e docenti, <br>
+            con grande soddisfazione vi informiamo che a partire dal 17 maggio 2023 le attività scolastiche presso il nostro istituto riprenderanno in presenza. Dopo un periodo di didattica a distanza, siamo lieti di poter accogliere nuovamente gli studenti nelle aule, promuovendo così un ambiente di apprendimento interattivo e stimolante.<br>
+            Per garantire la massima sicurezza di tutti, abbiamo adottato rigide misure di prevenzione e igiene, in linea con i protocolli sanitari vigenti. Sarà necessario rispettare il distanziamento sociale, indossare correttamente la mascherina durante le lezioni e igienizzare frequentemente le mani. Inoltre, saranno regolarmente effettuati controlli della temperatura all'ingresso dell'edificio scolastico.<br>
+            Confidiamo nella responsabilità e nella collaborazione di tutti voi per garantire un ambiente sicuro e salutare. Continueremo comunque a monitorare attentamente l'evolevolversi della situazione sanitaria e, se necessario, adotteremo eventuali misure aggiuntive per la tutela della comunità scolastica.<br>
+            Restiamo a disposizione per eventuali chiarimenti e vi auguriamo un ottimo ritorno alla scuola in presenza.<br>
+            Cordiali saluti,<br>
+            La Dirigenza</p>
+        </div>
+    </div>
+    <div class="footer">
+        Indirizzo: Via Cincinnato 28 - 65127 Pescara<br>
+        Telefono: +39 021 234 5678<br>
+        Email: gabrieledannunzio.itis@educazione.edu.it
+    </div>
+
+    <script>
+        var scrollArrow = document.querySelector('.scroll-down-arrow');
+        var announcementsSection = document.querySelector('#announcements');
+
+        scrollArrow.addEventListener('click', function(event) {
+            event.preventDefault();
+            announcementsSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>ORARIO PROF. ROSSI</title>
+  <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-color: #E1F2F8; /* Sfondo celeste chiaro */
+    }
+    .w3-bar {
+        background-color: white; /* Barra superiore bianca */
+        color: black;
+        text-align: center;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        margin: 0;
+        padding: 0 20px;
+        border-bottom: 1px solid black;
+        flex-wrap: wrap;
+    }
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 50%;
+        margin-left: 0; /* Rimosso margine negativo */
+    }
+    .logo {
+        display: inline-block;
+        width: 55px;
+        height: 55px;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+    .school-name {
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        margin-left: 10px;
+    }
+    .school-name a {
+        text-decoration: none;
+        color: black;
+    }
+    .footer {
+        background-color: white; /* Footer bianco */
+        border-top: 1px solid black;
+        color: black;
+        padding: 10px;
+        text-align: center;
+        font-size: 12px;
+        position: relative; /* Modificato da absolute a relative */
+        width: 100%;
+        bottom: 0;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 20px;
+      background-color: white;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    h3 {
+      margin-top: 20px;
+      font-weight: bold;
+      text-align: center; /* Centrato il titolo */
+    }
+    .back-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #f2f2f2;
+      color: #333;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      margin: 20px 0; /* Spaziatura migliorata */
+      display: block;
+      text-align: center;
+    }
+    .back-button:hover {
+      background-color: #eaeaea;
+    }
+
+    /* Media Queries per rendere il sito responsive */
+    @media (max-width: 768px) {
+        .w3-bar {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            padding: 10px;
+        }
+        .w3-bar a {
+            padding: 10px 0;
+        }
+        .logo-container {
+            margin-left: 0; /* Rimosso margine sinistro */
+            width: 100%;
+            justify-content: center;
+        }
+        .back-button {
+            margin: 20px auto; /* Centrato il bottone */
+            width: 80%; /* Adattato per schermi piccoli */
+        }
+    }
+  </style>
+</head>
+<body>
+    <div class="w3-bar">
+      <div class="logo-container">
+        <a href="index.html"><img class="logo" src="logo.jpg" alt="Logo ITIS D'ANNUNZIO"></a>
+        <div class="school-name"><a href="index.html">ITIS D'ANNUNZIO</a></div>
+      </div>
+      <div>
+        <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+        <a href="istituto.html" class="w3-bar-item w3-button">ISTITUTO</a>
+        <a href="indirizzi.html" class="w3-bar-item w3-button">INDIRIZZI</a>
+        <a href="docenti.html" class="w3-bar-item w3-button">DOCENTI</a>
+        <a href="registro.php" class="w3-bar-item w3-button">REGISTRO ELETTRONICO</a>
+      </div>
+    </div>
+    <h3>Prof. Rossi</h3>
+    <table>
+      <tr>
+        <th>Ora</th>
+        <th>Lunedì</th>
+        <th>Martedì</th>
+        <th>Mercoledì</th>
+        <th>Giovedì</th>
+      </tr>
+      <tr>
+        <td>8:00-9:00</td>
+        <td>1°A</td>
+        <td>-</td>
+        <td>2°C</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>9:00-10:00</td>
+        <td>-</td>
+        <td>1°A</td>
+        <td>-</td>
+        <td>2°C</td>
+      </tr>
+      <tr>
+        <td>10:00-10:50</td>
+        <td>3°C</td>
+        <td>1°A</td>
+        <td>1°D</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>11:00-12:00</td>
+        <td>-</td>
+        <td>1°D</td>
+        <td>1°D</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>12:00-13:00</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>3°D</td>
+      </tr>
+      <tr>
+        <td>13:00-14:00</td>
+        <td>2°C</td>
+        <td>3°C</td>
+        <td>-</td>
+        <td>3°D</td>
+      </tr>
+    </table>
+    <a href="docenti.html" class="back-button">Torna alla pagina dei docenti</a>
+    <div class="footer">
+        Indirizzo: Via degli Amanti, 28 - 65121 Pescara<br>
+        Telefono: +39 021 234 5678<br>
+        Email: gabrieledannunzio.itis@educazione.edu.it
+    </div>
+</body>
+</html>
