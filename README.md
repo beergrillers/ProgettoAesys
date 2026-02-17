@@ -2,6 +2,9 @@
 
 A modern, responsive website mockup designed for the "ITIS Gabriele D'Annunzio" Technical High School.
 
+> [!NOTE]
+> **School Project**: This project was created as a high school assignment to simulate a real-world institutional website.
+
 ## 🏫 Project Overview
 
 This project simulates the digital presence of an educational institution, providing students, parents, and staff with easy access to important information such as news, course details, and faculty members.
